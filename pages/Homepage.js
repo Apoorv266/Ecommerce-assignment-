@@ -49,7 +49,8 @@ swiperMain.appendChild(swiperSlide);
 
 }
 
-fetch('Homepage.json')
+const fetchCrousalData = () =>{
+  fetch('Homepage.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
@@ -64,6 +65,10 @@ fetch('Homepage.json')
   .catch(error => {
     console.error('Error fetching the JSON file:', error);
   });
+}
+
+fetchCrousalData()
+
 
 
  
