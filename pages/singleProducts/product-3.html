@@ -23,6 +23,9 @@
             <a href="../aboutUs.html">About Us</a>
         </div>
     </div>
+    <div class="notification" id="notification">
+        <p>Order placed !</p>
+    </div>
     <div class="container">
     <div class="wrapper">
         <div class="imgBox">  <img src="../../Assets/product4.png" alt="" srcset=""> </div>
@@ -34,7 +37,7 @@
                         rerum, doloremque dolorum tempore facilis?</p>
                     <div class="buying">
                         <h3>$161</h3>
-                        <button>Buy now</button>
+                        <button id="buy-now">Buy now</button>
                     </div>
                 </div>
          
@@ -47,6 +50,16 @@
         <a href="../aboutUs.html">About Us</a>
         <a href="../contactUs.html">Contact Us</a>
     </div>
+    <script>
+        const btn = document.getElementById("buy-now")
+        const notification = document.getElementById("notification")
+        btn.addEventListener("click", () => {
+            notification.style.display = 'block'
+            setTimeout(() => {
+                notification.style.display = 'none'
+            }, 2000);
+        })
+    </script>
 </body>
 
 </html>

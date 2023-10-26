@@ -4,6 +4,8 @@ const email = document.getElementById('email')
 const number = document.getElementById('number')
 const address = document.getElementById('address')
 const message = document.getElementById('message')
+const notification = document.getElementById("notification")
+let errorArray = []
 
 form.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -15,6 +17,7 @@ const setError = (element, message) => {
     const errorDisplay = inputControl.querySelector('.error');
 
     errorDisplay.innerText = message;
+    errorArray.push(message)
     inputControl.classList.add('error');
     inputControl.classList.remove('success')
 }
@@ -75,5 +78,14 @@ const validateInputs = () => {
         setError(message, 'Message is required');
     } else {
         setSuccess(message);
+    }
+
+    if (errorArray.length === 0) {
+        notification.style.display = 'block'
+        setTimeout(() => {
+            notification.style.display = 'none'
+        }, 2000);
+    }else{
+        notification.style.display = 'none'
     }
 }

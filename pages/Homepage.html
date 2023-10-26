@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -63,7 +65,7 @@
     </div>
 
     <section class="featured-section">
-        <div class="section1">
+        <div class="section1" data-aos="fade-right">
             <div class="feat-section-1">
                 <img src="../Assets/product2.png" alt="">
             </div>
@@ -76,9 +78,9 @@
             </div>
         </div>
 
-        <div class="section1">
+        <div class="section1" data-aos="fade-left">
 
-            <div class="feat-section-2">
+            <div class="feat-section-2" >
                 <h1>Mirage Mox Brightly Packed Shoes</h1>
                 <p>With design elements inspired by the movement and …a fresh new dimension to the iconic Rider family.
                 </p>
@@ -90,7 +92,7 @@
             </div>
         </div>
 
-        <div class="section1">
+        <div class="section1" data-aos="fade-right">
             <div class="feat-section-1">
                 <img src="../Assets/product3.png" alt="">
             </div>
@@ -132,6 +134,14 @@
 
     <!-- Initialize Swiper -->
     <script src="./Homepage.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+  duration: 1000
+      });
+    </script>
+
     <script>
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
