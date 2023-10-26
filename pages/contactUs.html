@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/contactUs.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-item">
+            <a href="./Homepage.html">Home</a>
+        </div>
+        <div class="nav-item">
+            <a href="./products.html">Shop</a>
+        </div>
+        <div class="nav-item">
+            <a href="./contactUs.html">Contact Us</a>
+        </div>
+        <div class="nav-item">
+            <a href="./aboutUs.html">About Us</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.72299939135!2d77.7032377!3d12.9922596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae140439836d33%3A0xa5dc176158f05490!2sKapture%20CX!5e0!3m2!1sen!2sin!4v1698071239774!5m2!1sen!2sin"
+                width="400" height="590" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="cardDetails">
+                <h2>Contact us !</h2>
+                <div class="content">
+                    <form id="form" action="/" method="GET">
+                        <div class="form-items">
+                            <div class="input-control">
+                                <label for="name">Name</label>
+                                <input id="name" name="name" type="text">
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="name">Email</label>
+                                <input id="email" name="email" type="text">
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="name">Address</label>
+                                <input id="address" name="address" type="text">
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="name">Mobile Number</label>
+                                <input id="number" name="number" type="text">
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" cols="30" rows="5" ></textarea>
+                                <div class="error"></div>
+                            </div>
+                      
+                        </div>
+                        <div class="buying">
+                            <button>Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a onclick="window.scrollTo(0, 0)">Back to top</a>
+        <a href="./products.html">Shop</a>
+        <a href="./aboutUs.html">About Us</a>
+        <a href="./contactUs.html">Contact Us</a>
+    </div>
+    <script src="./contactUs.js"></script>
+</body>
+
+</html>
